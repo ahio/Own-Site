@@ -1,6 +1,7 @@
 <template name="access_denied">
     <div class="access-denied jumbotron">
-        <h2>Access Denied</h2>
-        <p>You can't get here! Please log in.</p>
+        <h1>Access Denied</h1>
+        <p>You can't get here! Only for admin.</p>
+        <a href="{{pathFor 'ask'}}">return to ask page</a>
     </div>
 </template>

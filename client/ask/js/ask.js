@@ -14,5 +14,9 @@ Template.ask.events({
                 Router.go('postAsk');
             }
         });
+    },
+
+    "click .home": function() {
+        window.scrollTo(0, 0);
     }
 });

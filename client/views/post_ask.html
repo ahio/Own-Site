@@ -1,4 +1,27 @@
 <template name="postAsk">
-    <h2>Thank you for question!</h2>
-    <p>Also, feel free to contact me!</p>
+    <div id="container-main" class="container-main intro-effect-jam3 modify">
+
+        <div class="side-top clearfix">
+            <span class="right"><span>{{> loginButtons}}</span></span>
+        </div>
+
+        <header class="header-main">
+            <div class="bg-img-main"><img src="../header.jpg" alt="Background Image" /></div>
+            <div class="title-main">
+                <nav class="navigation">
+                    <a class="current-nav" href="#">Home</a>
+                    <a href="{{pathFor 'ask'}}">Ask me</a>
+                    <a href="{{pathFor 'projects'}}">Projects</a>
+                </nav>
+                <div class="post-ask">
+            <h2>Thank you for question!</h2>
+            <p>Also, feel free to contact me!</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="related-main">
+            {{> ask_relatedMain}}
+        </section>
+    </div>
 </template>

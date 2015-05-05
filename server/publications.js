@@ -1,6 +1,3 @@
-/**
- * Created by Ahio on 06.04.2015.
- */
 Meteor.publish('projects', function() {
     return Projects.find();
 });

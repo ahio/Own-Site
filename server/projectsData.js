@@ -1,6 +1,3 @@
-/**
- * Created by Ahio on 17.04.2015.
- */
 if (Projects.find().count() === 0) {
     Projects.insert({
         title: 'My own website',

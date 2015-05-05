@@ -92,15 +92,6 @@ html, body, .container-main, .header-main {
 	font-size: 1.75em;
 }
 
-.title-main p.photo {
-    height: 125px;
-    width: 150px;
-    border-radius: 20%;
-    background-image: url("../img.jpg");
-    background-size: contain;
-
-}
-
 /* Trigger Button */
 button.trigger {
 	position: fixed;
@@ -255,6 +246,7 @@ button.trigger span::before {
 
 .intro-effect-jam3:not(.notrans) .header-main p,
 .intro-effect-jam3:not(.notrans) .header-main p.subline,
+.intro-effect-jam3:not(.notrans) .related-main div.subline,
 .intro-effect-jam3:not(.notrans) .maincontent > div {
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
@@ -262,6 +254,7 @@ button.trigger span::before {
 
 .intro-effect-jam3.modify:not(.notrans) .header-main p,
 .intro-effect-jam3.modify:not(.notrans) .header-main p.subline,
+.intro-effect-jam3.modify:not(.notrans) .related-main div.subline,
 .intro-effect-jam3.modify:not(.notrans) .maincontent > div {
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;

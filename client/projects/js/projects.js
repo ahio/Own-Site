@@ -42,13 +42,12 @@ $(document).ready(function($){
     //change this value if you want to change the speed of the scale effect
     var	scaleSpeed = 0.3,
     //change this value if you want to set a different initial opacity for the .cd-half-block
-        boxShadowOpacityInitialValue = 0.7,
-        animating = false;
+    boxShadowOpacityInitialValue = 0.7,
 
     //check the media query
-    var MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
+     MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
     $(window).on('resize', function(){
-        MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
+     MQ = window.getComputedStyle(document.querySelector('body'), '::before').getPropertyValue('content').replace(/"/g, "");
     });
 
     //bind the animation to the window scroll event
@@ -58,21 +57,7 @@ $(document).ready(function($){
     });
 
     //move to next/previous section
-    $('.cd-vertical-nav .cd-prev').on('click', function(){
-        prevSection();
-    });
-    $('.cd-vertical-nav .cd-next').on('click', function(){
-        nextSection();
-    });
-    $(document).keydown(function(e){
-        if( e.which=='38' ) {
-            prevSection();
-            e.preventDefault();
-        } else if( e.which=='40' ) {
-            nextSection();
-            e.preventDefault();
-        }
-    });
+
 
     function triggerAnimation(){
         if(MQ == 'desktop') {
