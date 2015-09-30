@@ -78,10 +78,14 @@ html, body, .container-main, .header-main {
 	color: #fff;
 	padding: 0 0 0.6em;
 	font-weight: 300;
-	font-size: 0.85em;
+	font-size: 1em;
 	margin: 0 auto;
 }
 
+.title-main p a {
+	color: rgba(185, 95, 95, 0.91);
+	font-weight: normal;
+}
 
 .title-main h1,
 .title-main p.subline {
